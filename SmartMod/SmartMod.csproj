@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0BDB8259-830C-48E7-AF25-E3D6AE184631}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartMod</RootNamespace>
+    <AssemblyName>SmartMod</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>Debug</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>Release</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Game\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Game.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Graphics\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Graphics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Xact\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Xact.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Stardew Valley">
+      <HintPath>..\..\SMAPI\StardewModdingAPI\bin\Debug\Stardew Valley.exe</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="StardewModdingAPI">
+      <HintPath>..\..\SMAPI\StardewModdingAPI\bin\Debug\StardewModdingAPI.exe</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="xTile">
+      <HintPath>..\..\SMAPI\StardewModdingAPI\bin\Debug\xTile.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\SvLib\SvLib\Config.cs">
+      <Link>Static\Config.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\Content.cs">
+      <Link>Static\Content.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\Control.cs">
+      <Link>Static\Control.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\Encode.cs">
+      <Link>Static\Encode.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\Encryption.cs">
+      <Link>Static\Encryption.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\Environment.cs">
+      <Link>Static\Environment.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\Events.cs">
+      <Link>Static\Events.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\Graphics.cs">
+      <Link>Static\Graphics.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\Input.cs">
+      <Link>Static\Input.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\Inventory.cs">
+      <Link>Static\Inventory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\Item.cs">
+      <Link>Static\Item.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\Location.cs">
+      <Link>Static\Location.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\Menu.cs">
+      <Link>Static\Menu.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\MenuPage.cs">
+      <Link>Static\MenuPage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\Npc.cs">
+      <Link>Static\Npc.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\Path.cs">
+      <Link>Static\Path.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\Reflex.cs">
+      <Link>Static\Reflex.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\Stream.cs">
+      <Link>Static\Stream.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\Structure.cs">
+      <Link>Static\Structure.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\Texture.cs">
+      <Link>Static\Texture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\SvLib\SvLib\WinAPI.cs">
+      <Link>Static\WinAPI.cs</Link>
+    </Compile>
+    <Compile Include="Compatible\AccessChestAnywhere.cs" />
+    <Compile Include="Component\ButtonMenu.cs" />
+    <Compile Include="Component\DisplayDetial.cs" />
+    <Compile Include="Component\ModMenu.cs" />
+    <Compile Include="Component\QuickStack.cs" />
+    <Compile Include="Component\SlotLock.cs" />
+    <Compile Include="Component\SlotSwitch.cs" />
+    <Compile Include="Component\SmartStorage.cs" />
+    <Compile Include="Component\TileGrid.cs" />
+    <Compile Include="Menus\Controls\LinkButton.cs" />
+    <Compile Include="Menus\Controls\ClickableButton.cs" />
+    <Compile Include="Menus\Controls\SplitLabel.cs" />
+    <Compile Include="Menus\SmartModMenu.cs" />
+    <Compile Include="Menus\Controls\Checkbox.cs" />
+    <Compile Include="Menus\Controls\InputListener.cs" />
+    <Compile Include="Menus\SettingPage.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Static\Data.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Content\Texture\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon.psd" />
+    <None Include="manifest.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
